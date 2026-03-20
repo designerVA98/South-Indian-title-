@@ -1,10 +1,12 @@
+const text = "VA98 CREATIVITY";
 const title = document.getElementById("title");
 
-/* Glow pulse effect */
-setInterval(() => {
-  title.style.textShadow = `
-    0 0 10px rgba(255,140,0,0.8),
-    0 0 30px rgba(255,100,0,0.6),
-    0 0 60px rgba(255,60,0,0.4)
-  `;
-}, 500);
+/* Letter-by-letter animation */
+text.split("").forEach((char, i) => {
+  const span = document.createElement("span");
+  span.textContent = char;
+  span.classList.add("letter");
+
+  span.style.animationDelay = `${i * 0.1}s`;
+  title.appendChild(span);
+});
