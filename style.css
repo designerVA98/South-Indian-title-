@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background: black;
+  background: turmaric yellow;
   overflow: hidden;
   font-family: 'Cinzel', serif;
 }
@@ -25,7 +25,7 @@ body {
 
 /* Title */
 h1 {
-  color: #ffcc66;
+  color: darkgreen;
   font-size: 70px;
   letter-spacing: 10px;
   opacity: 0;
